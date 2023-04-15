@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+}
+#logo{
+    margin: 10px 35px;
+}
+#logo img{
+    margin: 10px;
+    height: 35px;
+}
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 15px;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+}
+#navbar ul li a:hover{
+    color: white;
+    background-color: red;
+}
+
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+#home::before{
+    content: "";
+    background: url('./images/background.webp') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background-color: black;
+}
+
+#home h1{
+    color:white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 300px;
+}
+#home p{
+    color: white;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    margin-top: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: white;
+    background-color:brown ;
+}
+
+.aboutus-container{
+    margin-top: 300px;
+    display: block;
+    width: auto;
+}
+.box{
+    display: flex;
+    margin: 50px ;
+    padding: 30px 100px;
+    width: auto;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+    
+.box2{
+    display: flex;
+    flex-direction: column;
+}
+.box2 img{
+    height: 168px;
+    margin-left: 20px;
+    width: 168px;
+}
+.box3 img{
+   margin-top: 20px;
+}
+.aboutus{
+    margin: 0 50px;
+    width: 50%;
+    height: 100px;
+}
+.aboutus h1{
+    margin: 20px 0;
+    font-size: 30px;
+
+}
+.aboutus p{
+    margin-top: 20px;
+    
+}
+#ourmenu{
+    height: 100px;
+    width: auto;
+}
+#ourmenu  h1{
+    
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+
+}
+#ourmenu p{
+    text-align: center;
+    margin: 20px 0;
+}
+.mbox{
+    display: flex;
+    justify-content: center;
+}
+.menubox:hover{
+    transform: translateY(-5px);
+}
+.menubox{
+    padding: 20px;
+    margin: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.899);
+    box-shadow: 4px 10px 19px 2px #777;
+    border-radius: 5px; 
+    transition: transform 0.5s;
+    
+}
+#customer{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 400px;
+    
+}
+#customer::before{
+    content: "";
+    background: url('./images/burger.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    margin-top: 100px;
+}
+
+.customer-review h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+    color: white;
+
+}
+.customer-review p{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+.customerbox{
+    display: flex;
+    margin: 50px 20px;
+    justify-content: center;
+    padding: 100px;
+
+}
+.customerbox .col-3{
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+    background-color: white;
+    margin: 0 50px;
+    height: 200px;
+    width: 200px;
+}
+.customerbox .col-3 img{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.customerbox .col-3:hover{
+    transform: translateY(-10px);
+
+}
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #880808;
+}
+.rating .fa{
+    color: #ae1313;
+}
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+.customerbox .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
